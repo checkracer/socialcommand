@@ -4,10 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Social Command Center — Race Up Work</title>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{--navy:#1877F2;--navy-light:#4293F5;--orange:#E74C3C;--orange-light:#FF6B5A;--blue:#1877F2;--green:#27AE60;--yellow:#F39C12;--red:#E74C3C;--purple:#9B59B6;--bg:#F0F2F5;--card:#FFFFFF;--text:#1C1E21;--text-light:#65676B;--border:#DADDE1;}
 *{margin:0;padding:0;box-sizing:border-box;}
-body{font-family:'Segoe UI',Tahoma,sans-serif;background:var(--bg);color:var(--text);}
+body{font-family:'Kanit',Tahoma,sans-serif;background:var(--bg);color:var(--text);}
 
 /* Header */
 .header{background:linear-gradient(135deg,#1877F2,#4293F5);color:#fff;padding:18px 30px;}
@@ -202,31 +203,31 @@ table.tbl tr:hover{background:#F8F9FA;}
 <div id="tab-effort" class="tab-content active">
   <div class="status-row" id="statusRow"></div>
   <div class="kpi-row" id="effortKpi"></div>
-  <div class="section-title">📝 จำนวน Content แยกประเภท</div>
+  <div class="section-title">Content Categories</div>
   <div class="g5" id="typeGrid"></div>
-  <div class="section-title">👤 ผลงาน Content รายบุคคล (PIC)</div>
+  <div class="section-title">By PR Agent</div>
   <div class="g3" id="picGrid"></div>
-  <div class="section-title">📋 ตาราง Content รายงาน</div>
+  <div class="section-title">Content Report</div>
   <div class="card" style="overflow-x:auto;"><table class="tbl" id="contentTable"></table></div>
   <div class="g2">
-    <div class="card"><h3 style="font-size:14px;color:#1877F2;margin-bottom:10px">Content รายเพจ (Stacked)</h3><div id="stackedChart"></div></div>
-    <div class="card"><h3 style="font-size:14px;color:#1877F2;margin-bottom:10px">สัดส่วน Content Status</h3><div class="donut-wrap" id="statusDonut"></div></div>
+    <div class="card"><h3 style="font-size:14px;color:#1877F2;margin-bottom:10px">Content by Page</h3><div id="stackedChart"></div></div>
+    <div class="card"><h3 style="font-size:14px;color:#1877F2;margin-bottom:10px">Content Status</h3><div class="donut-wrap" id="statusDonut"></div></div>
   </div>
 </div>
 
 <!-- ==================== TAB 2: PERFORMANCE ==================== -->
 <div id="tab-perf" class="tab-content">
   <div class="kpi-row" id="perfKpi"></div>
-  <div class="section-title">📊 Performance รายเพจ <span style="font-size:12px;color:var(--text-light);font-weight:400" id="perfCount"></span></div>
+  <div class="section-title">Page Performance <span style="font-size:12px;color:var(--text-light);font-weight:400" id="perfCount"></span></div>
   <div class="event-grid" id="eventGrid"></div>
-  <div class="section-title">📋 ตารางเปรียบเทียบข้ามเพจ</div>
+  <div class="section-title">Page Comparison</div>
   <div class="card" style="overflow-x:auto;"><table class="tbl" id="perfTable"></table></div>
   <div class="g2">
-    <div class="card"><h3 style="font-size:14px;color:#1877F2;margin-bottom:10px">Reach เปรียบเทียบ</h3><div class="bar-chart" id="reachChart"></div></div>
+    <div class="card"><h3 style="font-size:14px;color:#1877F2;margin-bottom:10px">Reach Comparison</h3><div class="bar-chart" id="reachChart"></div></div>
     <div class="card"><h3 style="font-size:14px;color:#1877F2;margin-bottom:10px">Engagement Rate (%)</h3><div class="bar-chart" id="erChart"></div></div>
   </div>
   <div class="g2">
-    <div class="card"><h3 style="font-size:14px;color:#1877F2;margin-bottom:10px">CPR เปรียบเทียบ (บาท/คน)</h3><div class="bar-chart" id="cprChart"></div></div>
+    <div class="card"><h3 style="font-size:14px;color:#1877F2;margin-bottom:10px">CPR Comparison</h3><div class="bar-chart" id="cprChart"></div></div>
     <div class="card"><h3 style="font-size:14px;color:#1877F2;margin-bottom:10px">Ad Spend Distribution</h3><div class="donut-wrap" id="spendDonut"></div></div>
   </div>
 </div>
@@ -234,7 +235,7 @@ table.tbl tr:hover{background:#F8F9FA;}
 <!-- ==================== TAB 3: EFFORT vs RESULT ==================== -->
 <div id="tab-combined" class="tab-content">
   <div class="kpi-row" id="combKpi"></div>
-  <div class="section-title">🔗 Content Effort vs Performance — ทุกเพจ</div>
+  <div class="section-title">Content Effort vs Performance — All Pages</div>
   <div class="card" style="overflow-x:auto;"><table class="tbl" id="combTable"></table></div>
   <div class="section-title">⚡ Content Efficiency Score (Reach ÷ Content)</div>
   <div class="scatter-grid" id="efficiencyGrid"></div>
